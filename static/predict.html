@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <link rel="stylesheet" href ="predict.css">
+    <title>Magic Machine</title>
+</head>
+
+<body>
+    <center><h1>Traffic Predicting Machine!</h1></center>
+
+    <center>
+    <form id="input" action="/predict" method="post">
+        RoadId: <input type="number" name="rid" min="1" max="100"><br>
+        Direction: <input type="number" name="direction" min="0" max="1"><br>
+        DayoftheWeek: <input type="number" name="day" min="1" max="7"><br>
+        TimeofDay: <input type="number" name="hour" min="0" max="23"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <center>
+
+</body>
+</HTML>

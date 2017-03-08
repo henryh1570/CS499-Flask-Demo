@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <link rel="stylesheet" href ="home.css">
+    <title>Henry's Homepage</title>
+</head>
+
+<body>
+    <center><h1>Home</h1></center>
+    <center><p>As wide as the world's web may be, I welcome you to a little page I call home.</p></center>
+    <center><button onclick="show()">About Me</button></center>
+    <center><p id="myInfo"></p><center>
+
+    <script>
+    var visibility = false;
+    var info = "Hello! My name is Henry H.<br>\
+                I am a Computer Scientist Undergradute at CPP.<br><br>\
+                My hobbies include gaming, watching anime/streams,<br>\
+                reading manga, web surfing, and tinkering with things.<br><br>\
+                CS Experience: Java, C, C++, Python, Rust, CSS, HTML, JavaScript, Android Studio<br><br>\
+                My github: https://github.com/henryh1570"
+
+    function show() {
+        if (visibility == false) {
+            visibility = true;
+            document.getElementById("myInfo").innerHTML = info;
+        } else {
+            visibility = false;
+            document.getElementById("myInfo").innerHTML = "";
+        }
+    }
+    </script>
+
+</body>
+</HTML>
